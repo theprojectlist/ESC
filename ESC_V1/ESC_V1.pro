@@ -1,4 +1,4 @@
-update=2/12/2020 1:19:45 PM
+update=2/26/2020 8:17:10 PM
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=ESC_V2.net
+LastNetListRead=ESC_V3.net
 PadDrill=0
 PadDrillOvalY=0
 PadSizeH=3

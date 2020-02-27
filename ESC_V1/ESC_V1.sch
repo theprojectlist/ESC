@@ -30,17 +30,6 @@ F 3 "http://www.jaolen.com/images/pdf/QM6015D.pdf" V 3350 2450 50  0001 L CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Transistor_FET:2N7002 Q4
-U 1 1 5E436BE9
-P 3350 3500
-F 0 "Q4" H 3556 3546 50  0000 L CNN
-F 1 "N Channel 40V 30A" H 3556 3455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 3550 3425 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3350 3500 50  0001 L CNN
-	1    3350 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D1
 U 1 1 5E436CBB
 P 3750 2400
@@ -103,17 +92,6 @@ F 3 "http://www.jaolen.com/images/pdf/QM6015D.pdf" V 4900 2450 50  0001 L CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Transistor_FET:2N7002 Q8
-U 1 1 5E4385C6
-P 4900 3500
-F 0 "Q8" H 5106 3546 50  0000 L CNN
-F 1 "N Channel 40V 30A" H 5106 3455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 5100 3425 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 4900 3500 50  0001 L CNN
-	1    4900 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D3
 U 1 1 5E4385CD
 P 5300 2400
@@ -165,17 +143,6 @@ Text GLabel 5000 3000 2    50   Input ~ 0
 MOTOR2
 Connection ~ 3750 3900
 Connection ~ 3750 2250
-$Comp
-L Transistor_FET:2N7002 Q12
-U 1 1 5E4396D3
-P 6450 3500
-F 0 "Q12" H 6656 3546 50  0000 L CNN
-F 1 "N Channel 40V 30A" H 6656 3455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 6650 3425 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 6450 3500 50  0001 L CNN
-	1    6450 3500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D D5
 U 1 1 5E4396DA
@@ -242,21 +209,9 @@ Text GLabel 3200 1500 0    50   Input ~ 0
 MOTOR2
 Text GLabel 3200 1600 0    50   Input ~ 0
 MOTOR3
-$Comp
-L Transistor_Array:ULN2803A U1
-U 1 1 5E4446DB
-P 5200 1200
-F 0 "U1" H 5200 1767 50  0000 C CNN
-F 1 "ULN2803A" H 5200 1676 50  0000 C CNN
-F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 5250 550 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 5300 1000 50  0001 C CNN
-	1    5200 1200
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4800 1600
 NoConn ~ 4800 1700
 NoConn ~ 5600 1600
-NoConn ~ 5600 1700
 Text GLabel 5200 1900 3    50   Input ~ 0
 GND
 Text GLabel 5600 900  2    50   Input ~ 0
@@ -383,4 +338,37 @@ Wire Wire Line
 	4550 1500 4800 1500
 Text GLabel 4550 1600 3    50   Input ~ 0
 GND
+$Comp
+L Transistor_FET:BSP129 Q1
+U 1 1 5E57629A
+P 3350 3500
+F 0 "Q1" H 3555 3546 50  0000 L CNN
+F 1 "BSP129" H 3555 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3550 3425 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f" H 3350 3500 50  0001 L CNN
+	1    3350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q2
+U 1 1 5E576A18
+P 4900 3500
+F 0 "Q2" H 5105 3546 50  0000 L CNN
+F 1 "BSP129" H 5105 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5100 3425 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f" H 4900 3500 50  0001 L CNN
+	1    4900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSP129 Q4
+U 1 1 5E5771A5
+P 6450 3500
+F 0 "Q4" H 6655 3546 50  0000 L CNN
+F 1 "BSP129" H 6655 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 6650 3425 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-BSP129-DS-v01_42-en.pdf?fileId=db3a30433c1a8752013c1fc296d2395f" H 6450 3500 50  0001 L CNN
+	1    6450 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
