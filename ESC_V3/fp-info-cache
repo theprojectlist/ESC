@@ -1,4 +1,4 @@
-19052903925496394
+19054532666803913
 Aesthetics
 BREADBOARD_SPACING
 BREADBOARD SPACING
@@ -81668,6 +81668,13 @@ AMASS_XT60-M
 0
 2
 2
+custom_library
+3 solder pad
+
+
+0
+0
+0
 digikey-footprints
 3-SIP_Module_TM1000Q
 

@@ -1,0 +1,538 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Driver_FET:IR2101 U1
+U 1 1 61149768
+P 2400 1850
+F 0 "U1" H 2400 2531 50  0000 C CNN
+F 1 "IR2101" H 2400 2440 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2400 1850 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 2400 1850 50  0001 C CNN
+	1    2400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D1
+U 1 1 6114AB13
+P 2800 1350
+F 0 "D1" H 2800 1133 50  0000 C CNN
+F 1 "1N4148WS" H 2650 1250 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 2800 1175 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 2800 1350 50  0001 C CNN
+	1    2800 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6114B81F
+P 1700 1900
+F 0 "C1" H 1815 1946 50  0000 L CNN
+F 1 "10u" H 1815 1855 50  0000 L CNN
+F 2 "Capacitors:0603" H 1738 1750 50  0001 C CNN
+F 3 "~" H 1700 1900 50  0001 C CNN
+	1    1700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6114BCDF
+P 3150 1550
+F 0 "C4" V 3402 1550 50  0000 C CNN
+F 1 "2.2u" V 3311 1550 50  0000 C CNN
+F 2 "Capacitors:0603" H 3188 1400 50  0001 C CNN
+F 3 "~" H 3150 1550 50  0001 C CNN
+	1    3150 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q1
+U 1 1 6114D7EA
+P 3500 1600
+F 0 "Q1" H 3664 1695 45  0000 L CNN
+F 1 "MOSFET-NCH-2N7002PW" H 3664 1611 45  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3500 1900 20  0001 C CNN
+F 3 "" H 3500 1600 50  0001 C CNN
+F 4 "TRANS-11151" H 3664 1516 60  0000 L CNN "Field4"
+	1    3500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q2
+U 1 1 61150321
+P 3500 2000
+F 0 "Q2" H 3664 2095 45  0000 L CNN
+F 1 "MOSFET-NCH-2N7002PW" H 3664 2011 45  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3500 2300 20  0001 C CNN
+F 3 "" H 3500 2000 50  0001 C CNN
+F 4 "TRANS-11151" H 3664 1916 60  0000 L CNN "Field4"
+	1    3500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 611505C1
+P 3150 1700
+F 0 "R1" V 3300 1700 50  0000 C CNN
+F 1 "100" V 3150 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 1700 50  0001 C CNN
+F 3 "~" H 3150 1700 50  0001 C CNN
+	1    3150 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61150C4A
+P 3150 2100
+F 0 "R2" V 3050 2100 50  0000 C CNN
+F 1 "100" V 3150 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 2100 50  0001 C CNN
+F 3 "~" H 3150 2100 50  0001 C CNN
+	1    3150 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 1800 2700 2050
+Connection ~ 3600 1800
+Wire Wire Line
+	3000 1700 2700 1700
+Wire Wire Line
+	2700 1700 2700 1650
+Wire Wire Line
+	3000 2100 2700 2100
+Wire Wire Line
+	2700 2100 2700 2150
+Wire Wire Line
+	3000 1550 2950 1550
+Text GLabel 2400 1350 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	2950 1350 2950 1550
+Connection ~ 2950 1550
+Wire Wire Line
+	2950 1550 2700 1550
+Text GLabel 2650 1350 1    50   Input ~ 0
+VCC
+Text GLabel 1700 1750 1    50   Input ~ 0
+VCC
+Text GLabel 1700 2050 3    50   Input ~ 0
+GND
+Text GLabel 3600 1400 1    50   Input ~ 0
+VCC
+Text GLabel 3600 2200 3    50   Input ~ 0
+GND
+Wire Wire Line
+	2700 1800 3350 1800
+Wire Wire Line
+	3300 1550 3350 1550
+Wire Wire Line
+	3350 1550 3350 1800
+Connection ~ 3350 1800
+Wire Wire Line
+	3350 1800 3600 1800
+Text GLabel 2400 2350 3    50   Input ~ 0
+GND
+Text GLabel 2100 1850 0    50   Input ~ 0
+H1
+Text GLabel 2100 1950 0    50   Input ~ 0
+L1
+Text GLabel 3600 1800 2    50   Input ~ 0
+OUT1
+Wire Notes Line
+	1550 900  4550 900 
+Wire Notes Line
+	4550 900  4550 2700
+Wire Notes Line
+	4550 2700 1550 2700
+Wire Notes Line
+	1550 2700 1550 900 
+Text Notes 3150 800  2    50   ~ 0
+Phase 1
+$Comp
+L Driver_FET:IR2101 U2
+U 1 1 6116C659
+P 2400 3900
+F 0 "U2" H 2400 4581 50  0000 C CNN
+F 1 "IR2101" H 2400 4490 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2400 3900 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 2400 3900 50  0001 C CNN
+	1    2400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D2
+U 1 1 6116C65F
+P 2800 3400
+F 0 "D2" H 2800 3183 50  0000 C CNN
+F 1 "1N4148WS" H 2650 3300 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 2800 3225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 2800 3400 50  0001 C CNN
+	1    2800 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6116C665
+P 1700 3950
+F 0 "C2" H 1815 3996 50  0000 L CNN
+F 1 "10u" H 1815 3905 50  0000 L CNN
+F 2 "Capacitors:0603" H 1738 3800 50  0001 C CNN
+F 3 "~" H 1700 3950 50  0001 C CNN
+	1    1700 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 6116C66B
+P 3150 3600
+F 0 "C5" V 3402 3600 50  0000 C CNN
+F 1 "2.2u" V 3311 3600 50  0000 C CNN
+F 2 "Capacitors:0603" H 3188 3450 50  0001 C CNN
+F 3 "~" H 3150 3600 50  0001 C CNN
+	1    3150 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q3
+U 1 1 6116C672
+P 3500 3650
+F 0 "Q3" H 3664 3745 45  0000 L CNN
+F 1 "MOSFET-NCH-2N7002PW" H 3664 3661 45  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3500 3950 20  0001 C CNN
+F 3 "" H 3500 3650 50  0001 C CNN
+F 4 "TRANS-11151" H 3664 3566 60  0000 L CNN "Field4"
+	1    3500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q4
+U 1 1 6116C679
+P 3500 4050
+F 0 "Q4" H 3664 4145 45  0000 L CNN
+F 1 "MOSFET-NCH-2N7002PW" H 3664 4061 45  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3500 4350 20  0001 C CNN
+F 3 "" H 3500 4050 50  0001 C CNN
+F 4 "TRANS-11151" H 3664 3966 60  0000 L CNN "Field4"
+	1    3500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6116C67F
+P 3150 3750
+F 0 "R3" V 3300 3750 50  0000 C CNN
+F 1 "100" V 3150 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 3750 50  0001 C CNN
+F 3 "~" H 3150 3750 50  0001 C CNN
+	1    3150 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 6116C685
+P 3150 4150
+F 0 "R4" V 3050 4150 50  0000 C CNN
+F 1 "100" V 3150 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 4150 50  0001 C CNN
+F 3 "~" H 3150 4150 50  0001 C CNN
+	1    3150 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3850 2700 4100
+Connection ~ 3600 3850
+Wire Wire Line
+	3000 3750 2700 3750
+Wire Wire Line
+	2700 3750 2700 3700
+Wire Wire Line
+	3000 4150 2700 4150
+Wire Wire Line
+	2700 4150 2700 4200
+Wire Wire Line
+	3000 3600 2950 3600
+Text GLabel 2400 3400 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	2950 3400 2950 3600
+Connection ~ 2950 3600
+Wire Wire Line
+	2950 3600 2700 3600
+Text GLabel 2650 3400 1    50   Input ~ 0
+VCC
+Text GLabel 1700 3800 1    50   Input ~ 0
+VCC
+Text GLabel 1700 4100 3    50   Input ~ 0
+GND
+Text GLabel 3600 3450 1    50   Input ~ 0
+VCC
+Text GLabel 3600 4250 3    50   Input ~ 0
+GND
+Wire Wire Line
+	2700 3850 3350 3850
+Wire Wire Line
+	3300 3600 3350 3600
+Wire Wire Line
+	3350 3600 3350 3850
+Connection ~ 3350 3850
+Wire Wire Line
+	3350 3850 3600 3850
+Text GLabel 2400 4400 3    50   Input ~ 0
+GND
+Text GLabel 2100 3900 0    50   Input ~ 0
+H2
+Text GLabel 2100 4000 0    50   Input ~ 0
+L2
+Text GLabel 3600 3850 2    50   Input ~ 0
+OUT2
+Wire Notes Line
+	1550 2950 4550 2950
+Wire Notes Line
+	4550 2950 4550 4750
+Wire Notes Line
+	4550 4750 1550 4750
+Wire Notes Line
+	1550 4750 1550 2950
+Text Notes 3150 2850 2    50   ~ 0
+Phase 2
+$Comp
+L Driver_FET:IR2101 U3
+U 1 1 61174DBC
+P 2400 5950
+F 0 "U3" H 2400 6631 50  0000 C CNN
+F 1 "IR2101" H 2400 6540 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2400 5950 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 2400 5950 50  0001 C CNN
+	1    2400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D3
+U 1 1 61174DC2
+P 2800 5450
+F 0 "D3" H 2800 5233 50  0000 C CNN
+F 1 "1N4148WS" H 2650 5350 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 2800 5275 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 2800 5450 50  0001 C CNN
+	1    2800 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 61174DC8
+P 1700 6000
+F 0 "C3" H 1815 6046 50  0000 L CNN
+F 1 "10u" H 1815 5955 50  0000 L CNN
+F 2 "Capacitors:0603" H 1738 5850 50  0001 C CNN
+F 3 "~" H 1700 6000 50  0001 C CNN
+	1    1700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 61174DCE
+P 3150 5650
+F 0 "C6" V 3402 5650 50  0000 C CNN
+F 1 "2.2u" V 3311 5650 50  0000 C CNN
+F 2 "Capacitors:0603" H 3188 5500 50  0001 C CNN
+F 3 "~" H 3150 5650 50  0001 C CNN
+	1    3150 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q5
+U 1 1 61174DD5
+P 3500 5700
+F 0 "Q5" H 3664 5795 45  0000 L CNN
+F 1 "MOSFET-NCH-2N7002PW" H 3664 5711 45  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3500 6000 20  0001 C CNN
+F 3 "" H 3500 5700 50  0001 C CNN
+F 4 "TRANS-11151" H 3664 5616 60  0000 L CNN "Field4"
+	1    3500 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q6
+U 1 1 61174DDC
+P 3500 6100
+F 0 "Q6" H 3664 6195 45  0000 L CNN
+F 1 "MOSFET-NCH-2N7002PW" H 3664 6111 45  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3500 6400 20  0001 C CNN
+F 3 "" H 3500 6100 50  0001 C CNN
+F 4 "TRANS-11151" H 3664 6016 60  0000 L CNN "Field4"
+	1    3500 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61174DE2
+P 3150 5800
+F 0 "R5" V 3300 5800 50  0000 C CNN
+F 1 "100" V 3150 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 5800 50  0001 C CNN
+F 3 "~" H 3150 5800 50  0001 C CNN
+	1    3150 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 61174DE8
+P 3150 6200
+F 0 "R6" V 3050 6200 50  0000 C CNN
+F 1 "100" V 3150 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 6200 50  0001 C CNN
+F 3 "~" H 3150 6200 50  0001 C CNN
+	1    3150 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 5900 2700 6150
+Connection ~ 3600 5900
+Wire Wire Line
+	3000 5800 2700 5800
+Wire Wire Line
+	2700 5800 2700 5750
+Wire Wire Line
+	3000 6200 2700 6200
+Wire Wire Line
+	2700 6200 2700 6250
+Wire Wire Line
+	3000 5650 2950 5650
+Text GLabel 2400 5450 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	2950 5450 2950 5650
+Connection ~ 2950 5650
+Wire Wire Line
+	2950 5650 2700 5650
+Text GLabel 2650 5450 1    50   Input ~ 0
+VCC
+Text GLabel 1700 5850 1    50   Input ~ 0
+VCC
+Text GLabel 1700 6150 3    50   Input ~ 0
+GND
+Text GLabel 3600 5500 1    50   Input ~ 0
+VCC
+Text GLabel 3600 6300 3    50   Input ~ 0
+GND
+Wire Wire Line
+	2700 5900 3350 5900
+Wire Wire Line
+	3300 5650 3350 5650
+Wire Wire Line
+	3350 5650 3350 5900
+Connection ~ 3350 5900
+Wire Wire Line
+	3350 5900 3600 5900
+Text GLabel 2400 6450 3    50   Input ~ 0
+GND
+Text GLabel 2100 5950 0    50   Input ~ 0
+H3
+Text GLabel 2100 6050 0    50   Input ~ 0
+L3
+Text GLabel 3600 5900 2    50   Input ~ 0
+OUT3
+Wire Notes Line
+	1550 5000 4550 5000
+Wire Notes Line
+	4550 5000 4550 6800
+Wire Notes Line
+	4550 6800 1550 6800
+Wire Notes Line
+	1550 6800 1550 5000
+Text Notes 3150 4900 2    50   ~ 0
+Phase 3
+$Comp
+L Connector:Conn_01x08_Male J1
+U 1 1 61175A41
+P 5900 1850
+F 0 "J1" H 5872 1732 50  0000 R CNN
+F 1 "Conn_01x08_Male" H 5872 1823 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 5900 1850 50  0001 C CNN
+F 3 "~" H 5900 1850 50  0001 C CNN
+	1    5900 1850
+	-1   0    0    1   
+$EndComp
+Text GLabel 5700 2150 0    50   Input ~ 0
+GND
+Text GLabel 5700 2050 0    50   Input ~ 0
+L3
+Text GLabel 5700 1950 0    50   Input ~ 0
+H3
+Text GLabel 5700 1850 0    50   Input ~ 0
+L2
+Text GLabel 5700 1750 0    50   Input ~ 0
+H2
+Text GLabel 5700 1650 0    50   Input ~ 0
+L1
+Text GLabel 5700 1550 0    50   Input ~ 0
+H1
+Text GLabel 5700 1450 0    50   Input ~ 0
+GND
+Text GLabel 5650 2600 0    50   Input ~ 0
+OUT1
+Text GLabel 5650 2700 0    50   Input ~ 0
+OUT2
+Text GLabel 5650 2800 0    50   Input ~ 0
+OUT3
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 61198895
+P 5850 3200
+F 0 "J3" H 5822 3082 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5822 3173 50  0000 R CNN
+F 2 "XT60-M:AMASS_XT60-M" H 5850 3200 50  0001 C CNN
+F 3 "~" H 5850 3200 50  0001 C CNN
+	1    5850 3200
+	-1   0    0    1   
+$EndComp
+Text GLabel 5650 3100 0    50   Input ~ 0
+VCC
+Text GLabel 5650 3200 0    50   Input ~ 0
+GND
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 6119BB8B
+P 5850 2600
+F 0 "J2" H 5822 2532 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 5822 2623 50  0000 R CNN
+F 2 "custom_library:3 solder pad" H 5850 2600 50  0001 C CNN
+F 3 "~" H 5850 2600 50  0001 C CNN
+	1    5850 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 6119CCED
+P 5850 2700
+F 0 "J4" H 5822 2632 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 5822 2723 50  0000 R CNN
+F 2 "custom_library:3 solder pad" H 5850 2700 50  0001 C CNN
+F 3 "~" H 5850 2700 50  0001 C CNN
+	1    5850 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J5
+U 1 1 6119D52D
+P 5850 2800
+F 0 "J5" H 5822 2732 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 5822 2823 50  0000 R CNN
+F 2 "custom_library:3 solder pad" H 5850 2800 50  0001 C CNN
+F 3 "~" H 5850 2800 50  0001 C CNN
+	1    5850 2800
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
