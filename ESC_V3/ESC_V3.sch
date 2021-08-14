@@ -58,7 +58,7 @@ F 3 "~" H 3150 1550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q1
+L ESC_V3-rescue:MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi Q1
 U 1 1 6114D7EA
 P 3500 1600
 F 0 "Q1" H 3664 1695 45  0000 L CNN
@@ -70,7 +70,7 @@ F 4 "TRANS-11151" H 3664 1516 60  0000 L CNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q2
+L ESC_V3-rescue:MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi Q2
 U 1 1 61150321
 P 3500 2000
 F 0 "Q2" H 3664 2095 45  0000 L CNN
@@ -205,7 +205,7 @@ F 3 "~" H 3150 3600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q3
+L ESC_V3-rescue:MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi Q3
 U 1 1 6116C672
 P 3500 3650
 F 0 "Q3" H 3664 3745 45  0000 L CNN
@@ -217,7 +217,7 @@ F 4 "TRANS-11151" H 3664 3566 60  0000 L CNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q4
+L ESC_V3-rescue:MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi Q4
 U 1 1 6116C679
 P 3500 4050
 F 0 "Q4" H 3664 4145 45  0000 L CNN
@@ -352,7 +352,7 @@ F 3 "~" H 3150 5650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q5
+L ESC_V3-rescue:MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi Q5
 U 1 1 61174DD5
 P 3500 5700
 F 0 "Q5" H 3664 5795 45  0000 L CNN
@@ -364,7 +364,7 @@ F 4 "TRANS-11151" H 3664 5616 60  0000 L CNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-DiscreteSemi:MOSFET-NCH-2N7002PW Q6
+L ESC_V3-rescue:MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi Q6
 U 1 1 61174DDC
 P 3500 6100
 F 0 "Q6" H 3664 6195 45  0000 L CNN

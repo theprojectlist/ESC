@@ -467,19 +467,19 @@ F 3 "~" H 5900 1850 50  0001 C CNN
 $EndComp
 Text GLabel 5700 2150 0    50   Input ~ 0
 GND
-Text GLabel 5700 2050 0    50   Input ~ 0
-L3
 Text GLabel 5700 1950 0    50   Input ~ 0
-H3
+L3
 Text GLabel 5700 1850 0    50   Input ~ 0
-L2
+H3
 Text GLabel 5700 1750 0    50   Input ~ 0
-H2
+L2
 Text GLabel 5700 1650 0    50   Input ~ 0
-L1
+H2
 Text GLabel 5700 1550 0    50   Input ~ 0
-H1
+L1
 Text GLabel 5700 1450 0    50   Input ~ 0
+H1
+Text GLabel 5700 2050 0    50   Input ~ 0
 GND
 Text GLabel 5650 2600 0    50   Input ~ 0
 OUT1
