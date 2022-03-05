@@ -522,17 +522,17 @@ Wire Notes Line
 Wire Notes Line
 	8050 1300 10750 1300
 Text GLabel 9150 4550 0    50   Input ~ 0
-LO2
+LO3
 Text GLabel 9150 4000 0    50   Input ~ 0
-HO2
+HO3
 Wire Wire Line
 	9050 4250 9150 4250
 Wire Wire Line
 	9050 4150 9050 4250
 Text GLabel 9050 4250 0    50   Input ~ 0
-FloatingSupply2
+FloatingSupply3
 Text GLabel 9050 4150 0    50   Input ~ 0
-VB1
+VB3
 Text GLabel 9150 3450 0    50   Input ~ 0
 LO2
 Text GLabel 9150 2900 0    50   Input ~ 0
@@ -544,7 +544,7 @@ Wire Wire Line
 Text GLabel 9050 3150 0    50   Input ~ 0
 FloatingSupply2
 Text GLabel 9050 3050 0    50   Input ~ 0
-VB1
+VB2
 Text GLabel 9150 2350 0    50   Input ~ 0
 LO1
 Text GLabel 9150 1800 0    50   Input ~ 0
