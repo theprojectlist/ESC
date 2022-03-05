@@ -91,11 +91,11 @@ LogicalLow2
 Text GLabel 6650 2300 0    50   Input ~ 0
 LogicalLow3
 Text GLabel 7400 1900 2    50   Input ~ 0
-Phase1
+PhaseA
 Text GLabel 7400 2200 2    50   Input ~ 0
-Phase2
+PhaseB
 Text GLabel 7400 2500 2    50   Input ~ 0
-Phase3
+PhaseC
 Text GLabel 7400 1700 2    50   Input ~ 0
 VB1
 Text GLabel 7400 2000 2    50   Input ~ 0
@@ -922,4 +922,43 @@ F 3 "~" H 6200 3900 50  0001 C CNN
 	1    6200 3900
 	0    1    1    0   
 $EndComp
+Text GLabel 6650 2500 0    50   Input ~ 0
+GND
+NoConn ~ 6650 2400
+NoConn ~ 6700 2900
+Wire Wire Line
+	6650 2700 6250 2700
+Wire Wire Line
+	5950 2950 5950 3150
+$Comp
+L Device:R R19
+U 1 1 623C84D3
+P 5800 3150
+F 0 "R19" H 5870 3196 50  0000 L CNN
+F 1 "2m" H 5870 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 5730 3150 50  0001 C CNN
+F 3 "~" H 5800 3150 50  0001 C CNN
+	1    5800 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 623C9190
+P 6100 3150
+F 0 "C8" V 6352 3150 50  0000 C CNN
+F 1 "1nf" V 6261 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6138 3000 50  0001 C CNN
+F 3 "~" H 6100 3150 50  0001 C CNN
+	1    6100 3150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5950 3150
+Text GLabel 5650 3150 0    50   Input ~ 0
+12V
+Text GLabel 6250 3150 2    50   Input ~ 0
+GND
+Wire Wire Line
+	5950 2950 6250 2950
+Wire Wire Line
+	6250 2950 6250 2700
 $EndSCHEMATC
