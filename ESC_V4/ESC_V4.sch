@@ -387,7 +387,7 @@ Wire Notes Line
 Text Notes 1200 5850 0    50   ~ 0
 AnalogComparator
 Text GLabel 6650 2600 0    50   Input ~ 0
-Enable
+5V
 $Comp
 L Connector:Conn_01x06_Female J3
 U 1 1 622E520D
