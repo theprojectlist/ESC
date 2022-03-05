@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /Users/colinsnow1/Documents/ESC/ESC_V3/ESC_V3.sch)
-    (date "Thursday, August 12, 2021 at 06:06:37 PM")
-    (tool "Eeschema (5.1.5-0)")
+    (source /Users/nathan/Documents/Robotics/ESC/ESC_V3/ESC_V3.sch)
+    (date "Friday, August 13, 2021 at 11:39:10 PM")
+    (tool "Eeschema (5.1.5-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -48,7 +48,7 @@
       (footprint Package_TO_SOT_SMD:TO-252-2)
       (fields
         (field (name Field4) TRANS-11151))
-      (libsource (lib SparkFun-DiscreteSemi) (part MOSFET-NCH-2N7002PW) (description "N-channel MOSFETs Voltage controlled devices that allow control of high current outputs. <b>SparkFun Products:</b><ul><li><a href= https://www.sparkfun.com/products/13261 >SparkFun OpenScale</a></li><li><a href= https://www.sparkfun.com/products/12651 >SparkFun Digital Sandbox</a></li><li><a href= https://www.sparkfun.com/products/10182 >SparkFun Monster Moto Shield</a></li><li><a href= https://www.sparkfun.com/products/11214 >SparkFun MOSFET Power Controller</a></li></ul>"))
+      (libsource (lib ESC_V3-rescue) (part MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 6114D7EA))
     (comp (ref Q2)
@@ -56,7 +56,7 @@
       (footprint Package_TO_SOT_SMD:TO-252-2)
       (fields
         (field (name Field4) TRANS-11151))
-      (libsource (lib SparkFun-DiscreteSemi) (part MOSFET-NCH-2N7002PW) (description "N-channel MOSFETs Voltage controlled devices that allow control of high current outputs. <b>SparkFun Products:</b><ul><li><a href= https://www.sparkfun.com/products/13261 >SparkFun OpenScale</a></li><li><a href= https://www.sparkfun.com/products/12651 >SparkFun Digital Sandbox</a></li><li><a href= https://www.sparkfun.com/products/10182 >SparkFun Monster Moto Shield</a></li><li><a href= https://www.sparkfun.com/products/11214 >SparkFun MOSFET Power Controller</a></li></ul>"))
+      (libsource (lib ESC_V3-rescue) (part MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 61150321))
     (comp (ref R1)
@@ -106,7 +106,7 @@
       (footprint Package_TO_SOT_SMD:TO-252-2)
       (fields
         (field (name Field4) TRANS-11151))
-      (libsource (lib SparkFun-DiscreteSemi) (part MOSFET-NCH-2N7002PW) (description "N-channel MOSFETs Voltage controlled devices that allow control of high current outputs. <b>SparkFun Products:</b><ul><li><a href= https://www.sparkfun.com/products/13261 >SparkFun OpenScale</a></li><li><a href= https://www.sparkfun.com/products/12651 >SparkFun Digital Sandbox</a></li><li><a href= https://www.sparkfun.com/products/10182 >SparkFun Monster Moto Shield</a></li><li><a href= https://www.sparkfun.com/products/11214 >SparkFun MOSFET Power Controller</a></li></ul>"))
+      (libsource (lib ESC_V3-rescue) (part MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 6116C672))
     (comp (ref Q4)
@@ -114,7 +114,7 @@
       (footprint Package_TO_SOT_SMD:TO-252-2)
       (fields
         (field (name Field4) TRANS-11151))
-      (libsource (lib SparkFun-DiscreteSemi) (part MOSFET-NCH-2N7002PW) (description "N-channel MOSFETs Voltage controlled devices that allow control of high current outputs. <b>SparkFun Products:</b><ul><li><a href= https://www.sparkfun.com/products/13261 >SparkFun OpenScale</a></li><li><a href= https://www.sparkfun.com/products/12651 >SparkFun Digital Sandbox</a></li><li><a href= https://www.sparkfun.com/products/10182 >SparkFun Monster Moto Shield</a></li><li><a href= https://www.sparkfun.com/products/11214 >SparkFun MOSFET Power Controller</a></li></ul>"))
+      (libsource (lib ESC_V3-rescue) (part MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 6116C679))
     (comp (ref R3)
@@ -164,7 +164,7 @@
       (footprint Package_TO_SOT_SMD:TO-252-2)
       (fields
         (field (name Field4) TRANS-11151))
-      (libsource (lib SparkFun-DiscreteSemi) (part MOSFET-NCH-2N7002PW) (description "N-channel MOSFETs Voltage controlled devices that allow control of high current outputs. <b>SparkFun Products:</b><ul><li><a href= https://www.sparkfun.com/products/13261 >SparkFun OpenScale</a></li><li><a href= https://www.sparkfun.com/products/12651 >SparkFun Digital Sandbox</a></li><li><a href= https://www.sparkfun.com/products/10182 >SparkFun Monster Moto Shield</a></li><li><a href= https://www.sparkfun.com/products/11214 >SparkFun MOSFET Power Controller</a></li></ul>"))
+      (libsource (lib ESC_V3-rescue) (part MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 61174DD5))
     (comp (ref Q6)
@@ -172,7 +172,7 @@
       (footprint Package_TO_SOT_SMD:TO-252-2)
       (fields
         (field (name Field4) TRANS-11151))
-      (libsource (lib SparkFun-DiscreteSemi) (part MOSFET-NCH-2N7002PW) (description "N-channel MOSFETs Voltage controlled devices that allow control of high current outputs. <b>SparkFun Products:</b><ul><li><a href= https://www.sparkfun.com/products/13261 >SparkFun OpenScale</a></li><li><a href= https://www.sparkfun.com/products/12651 >SparkFun Digital Sandbox</a></li><li><a href= https://www.sparkfun.com/products/10182 >SparkFun Monster Moto Shield</a></li><li><a href= https://www.sparkfun.com/products/11214 >SparkFun MOSFET Power Controller</a></li></ul>"))
+      (libsource (lib ESC_V3-rescue) (part MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 61174DDC))
     (comp (ref R5)
@@ -326,15 +326,14 @@
         (pin (num 6) (name VS) (type passive))
         (pin (num 7) (name HO) (type output))
         (pin (num 8) (name VB) (type passive))))
-    (libpart (lib SparkFun-DiscreteSemi) (part MOSFET-NCH-2N7002PW)
-      (description "N-channel MOSFETs Voltage controlled devices that allow control of high current outputs. <b>SparkFun Products:</b><ul><li><a href= https://www.sparkfun.com/products/13261 >SparkFun OpenScale</a></li><li><a href= https://www.sparkfun.com/products/12651 >SparkFun Digital Sandbox</a></li><li><a href= https://www.sparkfun.com/products/10182 >SparkFun Monster Moto Shield</a></li><li><a href= https://www.sparkfun.com/products/11214 >SparkFun MOSFET Power Controller</a></li></ul>")
+    (libpart (lib ESC_V3-rescue) (part MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi)
       (footprints
         (fp *SOT323*)
         (fp *SOT23-3*)
         (fp *SOT23-3*))
       (fields
         (field (name Reference) Q)
-        (field (name Value) MOSFET-NCH-2N7002PW)
+        (field (name Value) MOSFET-NCH-2N7002PW-SparkFun-DiscreteSemi)
         (field (name Footprint) SOT323)
         (field (name Field4) TRANS-11151))
       (pins
@@ -350,8 +349,8 @@
       (uri "/Library/Application Support/kicad/library/Diode.lib"))
     (library (logical Driver_FET)
       (uri "/Library/Application Support/kicad/library/Driver_FET.lib"))
-    (library (logical SparkFun-DiscreteSemi)
-      (uri "/Library/Application Support/kicad/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-DiscreteSemi.lib")))
+    (library (logical ESC_V3-rescue)
+      (uri /Users/nathan/Documents/Robotics/ESC/ESC_V3/ESC_V3-rescue.lib)))
   (nets
     (net (code 1) (name VCC)
       (node (ref U1) (pin 1))
